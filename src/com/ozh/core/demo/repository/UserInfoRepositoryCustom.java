@@ -3,7 +3,6 @@ package com.ozh.core.demo.repository;
 import com.ozh.core.demo.entity.UserInfo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import com.ozh.core.demo.entity.UserInfo;
 
 /**
  * Created by kosam on 2016/2/28.

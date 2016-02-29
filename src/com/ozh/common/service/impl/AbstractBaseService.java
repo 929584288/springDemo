@@ -14,7 +14,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by kosam on 2016/2/28.
+ * Created by ozh on 2016/2/28.
  * 基础服务类 实现
  */
 public abstract class AbstractBaseService<M extends BaseEntity, ID extends Serializable> implements IBaseService<M, ID> {

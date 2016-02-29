@@ -39,8 +39,8 @@ public class DemoController {
         userInfo.setUserAccount("kosam16");
         userInfo.setUserPassword("123456");
         UserInfoService userInfoService = SpringContextHolder.getBean(UserInfoService.class);
-        /*userInfoService.save(userInfo);*/
-        Page<UserInfo> result = userInfoService.query(pageable, "am1");
+        userInfoService.save(userInfo);
+       // Page<UserInfo> result = userInfoService.query(pageable, "am1");
         return SUCCESS;
     }
 }
