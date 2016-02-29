@@ -65,9 +65,9 @@
     </bean>
 
     <jpa:repositories
-            base-package="org.swinglife.**.repository"
+            base-package="org.ozh.**.repository"
             repository-impl-postfix="Impl"
-            factory-class="org.swinglife.common.repository.support.BaseRepositoryFactoryBean"
+            factory-class="com.ozh.common.repository.support.BaseRepositoryFactoryBean"
             entity-manager-factory-ref="entityManagerFactory"
             transaction-manager-ref="transactionManager">
     </jpa:repositories>
@@ -77,7 +77,7 @@
         <property name="dataSource" ref="dataSource"/>
 
         <!-- Jpa 持久化实体扫描的实体包位置 -->
-        <property name="packagesToScan" value="org.swinglife.**.entity"/>
+        <property name="packagesToScan" value="org.ozh.**.entity"/>
 
         <property name="persistenceUnitName" value="${jpa.persistenceUnitName}"/>
         <property name="persistenceProvider">
@@ -127,7 +127,7 @@
           class="com.alibaba.druid.support.spring.stat.DruidStatInterceptor"/>
 
     <aop:config proxy-target-class="true">
-        <aop:advisor id="druidAdvisor" advice-ref="druidStatInterceptor" pointcut="execution(* org.swinglife..service.*+.*(..))" />
+        <aop:advisor id="druidAdvisor" advice-ref="druidStatInterceptor" pointcut="execution(* org.ozh..service.*+.*(..))" />
     </aop:config>
 
     <!-- 使用annotation定义事务 -->

@@ -10,7 +10,7 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
             classpath*:/spring/applicationContext.xml,
-            classpath*:org/swinglife/**/META-INF/beans.xml
+            classpath*:com/ozh/utils/META-INF/beans.xml
         </param-value>
 	</context-param>
     <context-param>
@@ -67,7 +67,7 @@
     -->
     <filter>
         <filter-name>WebContextFileter</filter-name>
-        <filter-class>org.swinglife.web.filter.WebContextFilter</filter-class>
+        <filter-class>com.ozh.web.filter.WebContextFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>WebContextFileter</filter-name>

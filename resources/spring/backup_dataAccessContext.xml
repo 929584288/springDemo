@@ -45,7 +45,7 @@
     </bean>
 
     <!-- 重要配置：启用扫描并自动创建代理的功能  -->
-    <jpa:repositories base-package="org.swinglife"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
+    <jpa:repositories base-package="com.ozh"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
 
     <!-- Hibernate对Jpa的实现 -->
     <bean id="hibernateJpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
@@ -98,7 +98,7 @@
     <!--<aop:aspectj-autoproxy />-->
     <aop:config expose-proxy="true" proxy-target-class="true">
         <!-- 只对业务逻辑层实施事务 -->
-        <aop:pointcut id="txPointcut" expression="execution(* org.swinglife..service..*+.*(..))"/>
+        <aop:pointcut id="txPointcut" expression="execution(* com.ozh..service..*+.*(..))"/>
         <aop:advisor id="txAdvisor" advice-ref="txAdvice" pointcut-ref="txPointcut"/>
     </aop:config>
 

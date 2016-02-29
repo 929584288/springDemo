@@ -14,7 +14,7 @@
 	<!-- SpringMVC配置 -->
 	
 	<!-- 通过component-scan 让Spring扫描org.swinglife下的所有的Controller类，让Spring的代码注解生效 -->
-	<context:component-scan base-package="org.swinglife.*" use-default-filters="false">
+	<context:component-scan base-package="com.ozh.*" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
         <context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
 	</context:component-scan>
