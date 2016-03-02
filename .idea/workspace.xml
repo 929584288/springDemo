@@ -2,64 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="621d2f86-086c-435e-9209-2d06bdce255e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/common/Enum/BoolCodeEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/common/utils/BusinessException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/common/Enum/RoleTypeCodeEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/entity/SysRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/SysRoleRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/SysRoleRepositoryCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/impl/SysRoleRepositoryImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/service/SysRoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/service/impl/SysRoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/entity/SysUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/module/sysuser/controller/SysUserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/SysUserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/SysUserRepositoryCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/impl/SysUserRepositoryImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/entity/SysUserRoleRelationship.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/SysUserRoleRelationshipRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/SysUserRoleRelationshipRepositoryCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/repository/impl/SysUserRoleRelationshipRepositoryImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/service/SysUserRoleRelationshipService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/service/impl/SysUserRoleRelationshipServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/service/SysUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/core/service/impl/SysUserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ozh/common/Enum/UserSexCodeEnum.java" />
-      <change type="DELETED" beforePath="E:\work\springDemo\WebContent\WEB-INF\classes\com\ozh\demo\controller\DemoController.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\work\springDemo\WebContent\WEB-INF\classes\com\ozh\demo\controller\HomeController.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\work\springDemo\WebContent\WEB-INF\classes\com\ozh\demo\controller\OtherController.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\work\springDemo\WebContent\WEB-INF\classes\com\ozh\demo\controller\UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\work\springDemo\WebContent\WEB-INF\classes\com\ozh\demo\functions\UserApi.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\work\springDemo\WebContent\WEB-INF\classes\com\ozh\demo\service\UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\work\springDemo\WebContent\WEB-INF\classes\com\ozh\demo\vo\UserVo.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/com/ozh/common/entity/BaseEntity.class" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/com/ozh/common/entity/BaseEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/com/ozh/web/DefaultWebContext.class" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/com/ozh/web/DefaultWebContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/com/ozh/common/Global.class" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/com/ozh/common/Global.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/com/ozh/web/IWebContext.class" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/com/ozh/web/IWebContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/generator/template/src/main/java/${basepackage_dir}/${moduleName_dir}/entity/${className}.java" afterPath="$PROJECT_DIR$/doc/generator/template/src/main/java/${basepackage_dir}/${moduleName_dir}/entity/${className}.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/generator/template/src/main/java/${basepackage_dir}/${moduleName_dir}/repository/${className}Repository.java" afterPath="$PROJECT_DIR$/doc/generator/template/src/main/java/${basepackage_dir}/${moduleName_dir}/repository/${className}Repository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/generator/template/src/main/java/${basepackage_dir}/${moduleName_dir}/service/${className}Service.java" afterPath="$PROJECT_DIR$/doc/generator/template/src/main/java/${basepackage_dir}/${moduleName_dir}/service/${className}Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/1数据补丁/160229角色 用户.sql" afterPath="$PROJECT_DIR$/doc/1数据补丁/160229角色 用户.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozh/common/repository/BaseRepositoryImpl.java" afterPath="$PROJECT_DIR$/src/com/ozh/common/repository/BaseRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozh/web/DefaultWebContext.java" afterPath="$PROJECT_DIR$/src/com/ozh/web/DefaultWebContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozh/common/Global.java" afterPath="$PROJECT_DIR$/src/com/ozh/common/Global.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozh/web/IWebContext.java" afterPath="$PROJECT_DIR$/src/com/ozh/web/IWebContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/b2c/demo.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/b2c/demo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/generator/src/generator.xml" afterPath="$PROJECT_DIR$/doc/generator/src/generator.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/generator/template/java_imports.include" afterPath="$PROJECT_DIR$/doc/generator/template/java_imports.include" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/properties/resources.development.properties" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/properties/resources.development.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/properties/resources.development.properties" afterPath="$PROJECT_DIR$/resources/properties/resources.development.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/sdk.tld" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/sdk.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/b2c/common/taglibs.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/b2c/common/taglibs.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/1数据补丁/160302商品.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozh/module/sysuser/controller/SysUserController.java" afterPath="$PROJECT_DIR$/src/com/ozh/module/sysuser/controller/SysUserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\work\springDemo\src\com\ozh\demo\controller\DemoController.java" afterPath="$PROJECT_DIR$/src/com/ozh/module/demo/controller/DemoController.java" />
-      <change type="MOVED" beforePath="E:\work\springDemo\src\com\ozh\demo\controller\HomeController.java" afterPath="$PROJECT_DIR$/src/com/ozh/module/demo/controller/HomeController.java" />
-      <change type="MOVED" beforePath="E:\work\springDemo\src\com\ozh\demo\controller\OtherController.java" afterPath="$PROJECT_DIR$/src/com/ozh/module/demo/controller/OtherController.java" />
-      <change type="MOVED" beforePath="E:\work\springDemo\src\com\ozh\demo\controller\UserController.java" afterPath="$PROJECT_DIR$/src/com/ozh/module/demo/controller/UserController.java" />
-      <change type="MOVED" beforePath="E:\work\springDemo\src\com\ozh\demo\functions\UserApi.java" afterPath="$PROJECT_DIR$/src/com/ozh/sdk/functions/UserApi.java" />
-      <change type="MOVED" beforePath="E:\work\springDemo\src\com\ozh\demo\service\UserService.java" afterPath="$PROJECT_DIR$/src/com/ozh/sdk/service/UserApiService.java" />
-      <change type="MOVED" beforePath="E:\work\springDemo\src\com\ozh\demo\vo\UserVo.java" afterPath="$PROJECT_DIR$/src/com/ozh/module/demo/vo/UserVo.java" />
     </list>
     <ignored path="springDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +37,24 @@
         <entry file="file://$PROJECT_DIR$/src/com/ozh/module/sysuser/controller/SysUserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.50453514">
-              <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding>
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1432#1433#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+                <element signature="e#2267#2268#0" expanded="true" />
+                <element signature="e#2285#2286#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="160302商品.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/1数据补丁/160302商品.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.04">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ozh/module/core/repository/impl/SysRoleRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/com/ozh/module/core/repository/SysUserRepositoryCustom.java" />
         <option value="$PROJECT_DIR$/src/com/ozh/module/core/service/SysUserService.java" />
         <option value="$PROJECT_DIR$/src/com/ozh/module/web/controller/SysUserController.java" />
@@ -182,6 +143,7 @@
         <option value="$PROJECT_DIR$/src/com/ozh/core/entity/SysRole.java" />
         <option value="$PROJECT_DIR$/src/com/ozh/common/Enum/RoleTypeCodeEnum.java" />
         <option value="$PROJECT_DIR$/doc/1数据补丁/160229角色 用户.sql" />
+        <option value="$PROJECT_DIR$/doc/1数据补丁/160302商品.sql" />
         <option value="$PROJECT_DIR$/src/com/ozh/module/sysuser/controller/SysUserController.java" />
       </list>
     </option>
@@ -521,11 +483,11 @@
       <recent name="com.ozh.module.sysuser.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\springDemo\doc\1数据补丁" />
       <recent name="E:\work\springDemo\src\com\ozh\core\entity" />
       <recent name="E:\work\springDemo\src\com\ozh\core\service\impl" />
       <recent name="E:\work\springDemo\src\com\ozh\core\service" />
       <recent name="E:\work\springDemo\src\com\ozh\core\repository\impl" />
-      <recent name="E:\work\springDemo\src\com\ozh\core\repository" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\springDemo\src\com\ozh" />
@@ -876,7 +838,7 @@
       <option name="number" value="Default" />
       <updated>1456746237465</updated>
       <workItem from="1456746237859" duration="15099000" />
-      <workItem from="1456885895290" duration="16516000" />
+      <workItem from="1456885895290" duration="18765000" />
     </task>
     <task id="LOCAL-00001" summary="修改包名">
       <created>1456749246611</created>
@@ -890,15 +852,21 @@
       <option name="project" value="LOCAL" />
       <updated>1456761306930</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="用户注册">
+      <created>1456910239647</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1456910239647</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31615000" />
+    <option name="totallyTimeSpent" value="33864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -919,7 +887,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34385964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19989339" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19989339" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -977,7 +945,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改包名" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改包名" />
+    <MESSAGE value="用户注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户注册" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,7 +965,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ozh/module/sysuser/controller/SysUserController.java</url>
-          <line>53</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -1430,11 +1399,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doc/1数据补丁/160302商品.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.04">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ozh/module/sysuser/controller/SysUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50453514">
-          <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
-          <folding />
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#2267#2268#0" expanded="true" />
+            <element signature="e#2285#2286#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

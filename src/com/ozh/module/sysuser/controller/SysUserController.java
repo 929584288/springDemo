@@ -1,8 +1,11 @@
 package com.ozh.module.sysuser.controller;
 
+import com.ozh.common.Global;
+import com.ozh.common.utils.BusinessException;
 import com.ozh.core.entity.SysUser;
 import com.ozh.core.service.SysUserService;
 import com.ozh.utils.SpringContextHolder;
+import com.ozh.web.WebContextFactory;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
@@ -76,6 +79,20 @@ public class SysUserController {
 
 	protected SysUserService getSysUserService(){
 		return SpringContextHolder.getBean(SysUserService.class);
+	}
+
+	/**
+	 * 退出
+	 * @param model
+	 * @return
+	 * @throws BusinessException
+	 */
+	@RequestMapping(value = "/exit",method= RequestMethod.GET)
+	public String userExit(ModelMap model) throws BusinessException {
+		WebContextFactory.getWebContext().removeSessionAttr(Global.FRONT_USER);
+		//登陆时有将lastLoginTime放入session，离开时需要remove
+//		WebContextFactory.getWebContext().removeSessionAttr(Global.FRONT_USER_LAST_LOGIN_TIME);
+		return "redirect:/index.ac";
 	}
 
 }
