@@ -1,11 +1,16 @@
-<#include "/macro.include"/>
-<#include "/java_copyright.include">
 <#assign className = table.className>
 <#assign classNameLower = className?uncap_first>
-package com.ozh.${basepackage}.${moduleName}.service;
+package ${basepackage}.${moduleName}.service;
 
-import com.ozh.common.service.IBaseService;
+
 import ${basepackage}.${moduleName}.entity.${className};
-public interface ${className}Service extends IBaseService<${className}, Long> {
+import com.imall.commons.base.service.IBaseService;
+
+/**
+ * ${table.remarks}(服务层类)
+ * @author by imall core generator
+ * @version 1.0.0
+ */
+public interface ${className}Service extends IBaseService<${className}, Long>{
 
 }

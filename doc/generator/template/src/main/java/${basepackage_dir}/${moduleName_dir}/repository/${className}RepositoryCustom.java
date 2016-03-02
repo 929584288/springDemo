@@ -1,10 +1,14 @@
-<#include "/macro.include"/>
-<#include "/java_copyright.include">
 <#assign className = table.className>
-<#assign classNameLower = className?uncap_first>
-package com.ozh.${basepackage}.${moduleName}.repository;
 
+package ${basepackage}.${moduleName}.repository;
 
-public interface ${className}RepositoryCustom {
+/**
+ * ${table.remarks}(JPA持久化层)
+ * @author by imall core generator
+ * @version 1.0.0
+ */
+public interface ${className}RepositoryCustom{
+
 
 }
+

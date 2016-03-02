@@ -1,34 +1,26 @@
 package cn.org.rapid_framework.generator;
 
 
-/**
- * 
- * @author badqiu
- * @email badqiu(a)gmail.com
- */
-
 public class GeneratorMain {
 	/**
-	 * 请直接修改以下代码调用不同的方法以执行相关生成任务.
+	 * 按以下步骤进行：
 	 */
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Throwable {
 		GeneratorFacade g = new GeneratorFacade();
+        //TODO:步骤一：改模块名称，最终生成的顶java page以generator.xml的参数basepackage + moduleName为结果，例如com.gzl.b2c.proudct
         GeneratorProperties.setProperty("moduleName","core");
+        //TODO:步骤二：改dbSchema 要与generator.xml 参数jdbc.schema一致
+        GeneratorProperties.setProperty("dbSchema","B2C");
 //		g.printAllTableNames();				//打印数据库中的表名称
 
 		g.deleteOutRootDir();							//删除生成器的输出目录
-//        String tables = "PRD_INF_ARTICLE,PRD_BUSINESS_RULE,PRD_PAY_WAY,PRD_PRESENT,PRD_DELIVERY_LOGISTICS_COMPANY,PRD_DELIVERY_WAY,PRD_DELIVERY_RULE,PRD_DELIVERY_RULE_ZONE_RELATIONSHIP";
-//        String tables = "SYS_PARAM_INF,SYS_COMMENT,SYS_COMMENT_SESSION";
-//      String tables = "PRD_INF_ARTICLE";
-//	      String tables = "PRD_DELIVERY_LOGISTICS_COMPANY,PRD_DELIVERY_WAY,PRD_DELIVERY_RULE,PRD_DELIVERY_RULE_ZONE_RELATIONSHIP";
 
-		//PRD_USER_PRODUCT_PROXY,PRD_PAGE_MODULE,PRD_PAGE_MODULE_OBJECT
-//		String tables = "SYS_USER,SYS_ROLE,SYS_USER_ROLE_RELATIONSHIP";
-		String tables = "SYS_USER";
+        //TODO:步骤三：填入要生成代码的表名称，可以多个表但须以 ',' 分开
+        String tables = "t_user_info";
+//        String tables = "TB_CM_VIEW_DATA_SYNC_LOG,TB_CM_VIEW_DATA_SYNC_TIME";
 
 
-
-		for(String table : tables.split(",")){
+        for(String table : tables.split(",")){
            g.generateByTable(table,"template");
         }
 //		g.generateByTable("table_name","template");	//通过数据库表生成文件,template为模板的根目录

@@ -10,7 +10,7 @@ public class ToBase64 {
 	public static void main(String[] args) {
 		try {
 			String[] values = new String[] {
-					"2-15岁,1.1米以下等"
+					"2-12岁,1.1米以下等"
 			};
 			BASE64Encoder encoder = new BASE64Encoder();
 			for(String value: values){
