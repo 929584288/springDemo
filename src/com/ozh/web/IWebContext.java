@@ -1,6 +1,8 @@
 package com.ozh.web;
 
 
+import com.ozh.core.entity.SysUser;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -34,21 +36,7 @@ public interface IWebContext {
     void setCookie(Cookie c);
     void expireCookie(String cookieName);
 
-    /*void setFrontEndUser(CuUserExtend user);
-    CuUserExtend getFrontEndUser();*/
-
-
-    //获取登录帐号
-    /*String  getAccount();
-    void  setAccount(HttpServletRequest request, CuUserExtend cuUserExtend);
-    void removeAccount(HttpServletRequest request);
-*/
-    /**同业登录用户**/
-    /*void setAgentFrontEndUser(AgentAccountVo user);
-    AgentAccountVo getAgentFrontEndUse();
-*/
-    /*void setChanelType(ChanelType type);*/
-
-    /*void setChanelCompanyId(String orgId);*/
+    void setFrontEndUser(SysUser user);
+    SysUser getFrontEndUser();
 
 }

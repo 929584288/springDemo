@@ -1,6 +1,9 @@
 package com.ozh.web;
 
 
+import com.ozh.common.Global;
+import com.ozh.core.entity.SysUser;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -134,67 +137,18 @@ public class DefaultWebContext implements IWebContext {
         }
     }
 
-    /*@Override
-    public void setFrontEndUser(CuUserExtend user) {
-        Assert.notNull(user,"CuUserExtend can not be null");
-        setSessionAttr(Global.FRONT_END_USER, user);
-    }
     @Override
-    public CuUserExtend getFrontEndUser() {
-        return (CuUserExtend)getSessionAttr(Global.FRONT_END_USER);
+    public void setFrontEndUser(SysUser user) {
+        if (session != null) {
+            session.setAttribute(Global.FRONT_USER, user);
+        }
     }
-*/
-   /* @Override
-    public String getAccount() {
-        Cookie cookie = getCookie(Global.LOGIN_ACCOUNT);
-        if(cookie!=null){
-            if(cookie.getValue()!=null){
-                try {
-                    return URLDecoder.decode(cookie.getValue(), "UTF-8");
-                } catch (UnsupportedEncodingException e) {
-                    e.printStackTrace();
-                }
-            }
-            return null;
-            //return cookie.getValue();
+
+    @Override
+    public SysUser getFrontEndUser() {
+        if (session != null) {
+            return (SysUser) session.getAttribute(Global.FRONT_USER);
         }
         return null;
     }
-
-    @Override
-    public void setAccount(HttpServletRequest request, CuUserExtend cuUserExtend) {
-        Cookie cookie = null;
-        try {
-            cookie = new Cookie(Global.LOGIN_ACCOUNT, URLEncoder.encode(CommonUtil.getName(cuUserExtend), "UTF-8"));
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        //Cookie cookie = new Cookie(Global.LOGIN_ACCOUNT, CommonUtil.getName(cuUserExtend));
-        cookie.setMaxAge(60 * 60 * 24 * 30 * 1);
-        String path = request.getContextPath();
-        cookie.setPath((path == null || path.length()==0) ? "/" : path);
-        response.addCookie(cookie);
-    }
-
-    @Override
-    public void removeAccount(HttpServletRequest request) {
-        Cookie cookie = new Cookie(Global.LOGIN_ACCOUNT,null);
-        cookie.setMaxAge(0);
-        String path = request.getContextPath();
-        cookie.setPath((path == null || path.length()==0) ? "/" : path);
-        response.addCookie(cookie);
-    }
-
-    @Override
-    public void setAgentFrontEndUser(AgentAccountVo user) {
-        Assert.notNull(user,"AgentAccountVo can not be null");
-        setSessionAttr(Global.AGENT_FRONT_END_USER, user);
-    }
-
-    @Override
-    public AgentAccountVo getAgentFrontEndUse() {
-        return (AgentAccountVo)getSessionAttr(Global.AGENT_FRONT_END_USER);
-    }
-*/
-
 }

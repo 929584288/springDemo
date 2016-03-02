@@ -9,13 +9,13 @@
     <display-name>JSTL functions</display-name>
     <tlib-version>1.1</tlib-version>
     <short-name>functions</short-name>
-    <uri>http://www.kosam.com/sdk</uri>
+    <uri>http://www.ozh.com/sdk</uri>
 
     <!--获取用户信息-->
     <function>
         <name>getUserInfo</name>
-        <function-class>com.ozh.demo.functions.UserApi</function-class>
-        <function-signature>com.ozh.demo.vo.UserVo getUserInf()</function-signature>
+        <function-class>com.ozh.sdk.functions.UserApi</function-class>
+        <function-signature>com.ozh.module.demo.vo.UserVo getUserInf()</function-signature>
     </function>
 
 </taglib>

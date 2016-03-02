@@ -3,8 +3,8 @@
 package ${basepackage}.${moduleName}.repository;
 
 import ${basepackage}.${moduleName}.entity.*;
-import com.imall.commons.base.dao.IBaseRepository;
-import org.springframework.data.jpa.repository.Query;
+import com.ozh.common.repository.IBaseRepository;
+
 /**
  * ${table.remarks}(JPA持久化层)
  * @author by imall core generator

@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * Created by kosam on 2016/2/28.
+ * Created by ozh on 2016/2/28.
  * 持久层基本借口 实现
  */
 @Transactional(readOnly = true)

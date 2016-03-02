@@ -1,8 +1,8 @@
 <#assign className = table.className>
 import java.util.*;
 
-import com.iloosen.imall.commons.base.*;
-import com.iloosen.imall.commons.util.*;
+import com.ozh.commons.base.*;
+import com.ozh.commons.util.*;
 
 import cn.org.rapid_framework.util.*;
 import cn.org.rapid_framework.web.util.*;
@@ -15,7 +15,7 @@ import ${basepackage}.${moduleName}.service.*;
 import ${servicepackage}.*;
 
 /**
- * @key gen www.iloosen.com
+ * @key gen www.ozh.com
  * @version 1.0
  * @since 1.0
  */

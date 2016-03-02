@@ -4,7 +4,7 @@ package ${basepackage}.${moduleName}.service;
 
 
 import ${basepackage}.${moduleName}.entity.${className};
-import com.imall.commons.base.service.IBaseService;
+import com.ozh.common.service.IBaseService;
 
 /**
  * ${table.remarks}(服务层类)

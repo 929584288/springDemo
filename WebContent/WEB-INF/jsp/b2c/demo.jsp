@@ -37,7 +37,7 @@
 </head>
 <body>
 <h2>spring mvc 实例</h2>
-
+${sdk:getUserInfo()}
 
 	username:<input type="text" name="username" id="username" />
 	<p>

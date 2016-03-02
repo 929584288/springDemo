@@ -10,7 +10,7 @@
         5.改jdbc.url
 	</comment>
 	
-    <entry key="basepackage">com.kosam</entry>
+    <entry key="basepackage">com.ozh</entry>
 
 
 	<entry key="outRoot">D:/imall/gensrc</entry>
