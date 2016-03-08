@@ -1,9 +1,9 @@
-drop table if exists PRD_PRODUCT3;
+drop table if exists PRD_PRODUCT;
 
 /*==============================================================*/
 /* Table: PRD_PRODUCT3                                          */
 /*==============================================================*/
-create table PRD_PRODUCT3
+create table PRD_PRODUCT
 (
    ID           int not null,
    PRODUCT_NM           varchar(255) not null,
