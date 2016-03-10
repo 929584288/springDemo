@@ -151,4 +151,8 @@ public class DefaultWebContext implements IWebContext {
         }
         return null;
     }
+    @Override
+    public Integer getFrontEndUserId() {
+        return getFrontEndUser()==null?null:getFrontEndUser().getId().intValue();
+    }
 }

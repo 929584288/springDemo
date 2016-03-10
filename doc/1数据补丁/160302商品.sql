@@ -5,7 +5,7 @@ drop table if exists PRD_PRODUCT;
 /*==============================================================*/
 create table PRD_PRODUCT
 (
-   ID           int not null,
+   ID          bigint not null auto_increment,
    PRODUCT_NM           varchar(255) not null,
    SELLING_POINT        varchar(255),
    PRODUCT_CODING       varchar(128) not null,

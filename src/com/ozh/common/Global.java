@@ -10,4 +10,7 @@ public interface Global {
     public static final String FRONT_USER = "user";
 
     public static final int DEFAULT_FRONT_USER_LEVEL=1;    //默认等级，普通会员，未登录用户等级
+
+    public static final String SHOPPINGCART = "shoppingCart";
+
 }

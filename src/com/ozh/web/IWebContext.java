@@ -39,4 +39,7 @@ public interface IWebContext {
     void setFrontEndUser(SysUser user);
     SysUser getFrontEndUser();
 
+    Integer getFrontEndUserId();
+
+
 }
