@@ -11,7 +11,8 @@ public class CartItem {
     private String name;//商品名称
     private String specName;//规格名称
     private String itemKey = UUID.randomUUID().toString();
-
+    private Double productPrice;//价格
+    private String imgUrl;//商品图片地址
     /** 商品总金额 = 单价 * 数量*/
     private Double productTotalAmount;
     /** 商品单价*/
@@ -19,7 +20,13 @@ public class CartItem {
 
     //限购数量
     private Integer limitBuy;
-
+    public CartItem(Integer skuId,Integer quantity,String name,String specName,Double productPrice){
+        this.skuId = skuId;
+        this.quantity = quantity;
+        this.name = name;
+        this.specName = specName;
+        this.productPrice = productPrice;
+    }
     public Integer getSkuId() {
         return skuId;
     }
@@ -83,4 +90,6 @@ public class CartItem {
     public void setLimitBuy(Integer limitBuy) {
         this.limitBuy = limitBuy;
     }
+
+
 }

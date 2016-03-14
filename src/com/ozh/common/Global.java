@@ -13,4 +13,6 @@ public interface Global {
 
     public static final String SHOPPINGCART = "shoppingCart";
 
+    public static final String ADMIN = "admin_user";
+
 }

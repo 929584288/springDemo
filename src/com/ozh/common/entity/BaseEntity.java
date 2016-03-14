@@ -21,31 +21,31 @@ import java.util.Date;
 public class BaseEntity<ID extends Serializable> implements Persistable<ID> {
     private static final long serialVersionUID = -4829990623102036715L;
     public static final String ID = "id";
-//    public static final String CREATE_BY = "createBy";
-//    public static final String CREATE_DATE = "createDate";
-//    public static final String LAST_MODIFIED_BY = "lastModifiedBy";
-//    public static final String LAST_MODIFIED_DATE = "lastModifiedDate";
+    public static final String CREATE_BY = "createBy";
+    public static final String CREATE_DATE = "createDate";
+    public static final String LAST_MODIFIED_BY = "lastModifiedBy";
+    public static final String LAST_MODIFIED_DATE = "lastModifiedDate";
 //    public static final String VERSION = "version";
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private ID id;
 
-//    @CreatedBy
-//    @Column(updatable = false, name = "create_by",nullable = true)
-//    private String createBy;
-//
-//    @CreatedDate
-//    @Column(updatable = false, name = "create_date",nullable = true)
-//    private Date createDate;
-//
-//    @LastModifiedBy
-//    @Column(name = "last_modified_by",nullable = true)
-//    private String lastModifiedBy;
-//
-//    @LastModifiedDate
-//    @Column(name = "last_modified_date",nullable = true)
-//    private Date lastModifiedDate;
+    @CreatedBy
+    @Column(updatable = false, name = "create_by",nullable = true)
+    private String createBy;
+
+    @CreatedDate
+    @Column(updatable = false, name = "create_date",nullable = true)
+    private Date createDate;
+
+    @LastModifiedBy
+    @Column(name = "last_modified_by",nullable = true)
+    private String lastModifiedBy;
+
+    @LastModifiedDate
+    @Column(name = "last_modified_date",nullable = true)
+    private Date lastModifiedDate;
 //
 //    @Version
 //    @Column(name = "version",nullable = true)
@@ -55,51 +55,51 @@ public class BaseEntity<ID extends Serializable> implements Persistable<ID> {
         this.id = id;
     }
 
-//    public String getCreateBy() {
-//        return createBy;
-//    }
-//
-//    public void setCreateBy(String createBy) {
-//        this.createBy = createBy;
-//    }
-//
-//    public Date getCreateDate() {
-//        return createDate;
-//    }
-//
-//    public void setCreateDate(Date createDate) {
-//        this.createDate = createDate;
-//    }
-//    public String getCreateDateString() {
-//        return DateTimeUtils.convertDateTimeToString(getCreateDate());
-//    }
-//    public void setCreateDateString(String value) throws ParseException {
-//        setCreateDate(DateTimeUtils.convertStringToDateTime(value));
-//    }
-//
-//    public String getLastModifiedBy() {
-//        return lastModifiedBy;
-//    }
-//
-//    public void setLastModifiedBy(String lastModifiedBy) {
-//        this.lastModifiedBy = lastModifiedBy;
-//    }
-//
-//    public Date getLastModifiedDate() {
-//        return lastModifiedDate;
-//    }
-//
-//    public void setLastModifiedDate(Date lastModifiedDate) {
-//        this.lastModifiedDate = lastModifiedDate;
-//    }
-//
-//    public String getLastModifiedDateString() {
-//        return DateTimeUtils.convertDateTimeToString(getLastModifiedDate());
-//    }
-//    public void setLastModifiedDateString(String value) throws ParseException {
-//        setLastModifiedDate(DateTimeUtils.convertStringToDateTime(value));
-//    }
-//
+    public String getCreateBy() {
+        return createBy;
+    }
+
+    public void setCreateBy(String createBy) {
+        this.createBy = createBy;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+    public String getCreateDateString() {
+        return DateTimeUtils.convertDateTimeToString(getCreateDate());
+    }
+    public void setCreateDateString(String value) throws ParseException {
+        setCreateDate(DateTimeUtils.convertStringToDateTime(value));
+    }
+
+    public String getLastModifiedBy() {
+        return lastModifiedBy;
+    }
+
+    public void setLastModifiedBy(String lastModifiedBy) {
+        this.lastModifiedBy = lastModifiedBy;
+    }
+
+    public Date getLastModifiedDate() {
+        return lastModifiedDate;
+    }
+
+    public void setLastModifiedDate(Date lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
+    }
+
+    public String getLastModifiedDateString() {
+        return DateTimeUtils.convertDateTimeToString(getLastModifiedDate());
+    }
+    public void setLastModifiedDateString(String value) throws ParseException {
+        setLastModifiedDate(DateTimeUtils.convertStringToDateTime(value));
+    }
+
 //    public Long getVersion() {
 //        return version;
 //    }

@@ -2,7 +2,9 @@ package com.ozh.module.shoppingcart.service;
 
 import com.ozh.common.Global;
 import com.ozh.common.utils.BusinessException;
+import com.ozh.core.service.ShoppingCartListService;
 import com.ozh.module.shoppingcart.domain.ShoppingCart;
+import com.ozh.utils.SpringContextHolder;
 import com.ozh.web.WebContextFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,6 +38,7 @@ public class NormalShoppingFlowService{
 
     public ShoppingCart createCart(Integer userId,String uniqueKey) {
         ShoppingCart cart = new ShoppingCart(genUniqueKey(userId));
+        cart.setItems(SpringContextHolder.getBean(ShoppingCartListService.class).findCartItemByUserId(userId));
         cart.setUserId(userId);
         return saveCart(uniqueKey,cart);
     }

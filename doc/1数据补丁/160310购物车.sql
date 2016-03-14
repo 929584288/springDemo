@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS SHOPPING_CART;
 /*==============================================================*/
 /* Table: PRD_PRODUCT3                                          */
 /*==============================================================*/
-CREATE TABLE SHOPPING_CART
+CREATE TABLE SHOPPING_CART_LIST
 (
    ID          BIGINT NOT NULL AUTO_INCREMENT,
    USER_ID          BIGINT NOT NULL,
