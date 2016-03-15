@@ -2,6 +2,7 @@ package com.ozh.module.shoppingcart.service;
 
 import com.ozh.common.Global;
 import com.ozh.common.utils.BusinessException;
+import com.ozh.common.utils.ShoppingCartProcessing;
 import com.ozh.core.service.ShoppingCartListService;
 import com.ozh.module.shoppingcart.domain.ShoppingCart;
 import com.ozh.utils.SpringContextHolder;
@@ -18,9 +19,9 @@ import java.util.UUID;
 @Service
 @Transactional
 public class NormalShoppingFlowService{
-    public void addItem(Integer quantity, Integer userId) throws BusinessException {
+    public void addItem(Integer productId,Integer quantity, Integer userId) throws BusinessException {
         ShoppingCart cart = getCart(userId);
-//        getShoppingHandler(type).addItem(cart, objectId, quantity, userId, orgId);
+       ShoppingCartProcessing.addItem(cart, productId, quantity);
 //        ResolverUtils.clacCartMisc(cart);
 //        ServiceManager.shoppingCartStoreService.saveCart(cart);
         saveCart(genUniqueKey(userId),cart);
@@ -38,7 +39,7 @@ public class NormalShoppingFlowService{
 
     public ShoppingCart createCart(Integer userId,String uniqueKey) {
         ShoppingCart cart = new ShoppingCart(genUniqueKey(userId));
-        cart.setItems(SpringContextHolder.getBean(ShoppingCartListService.class).findCartItemByUserId(userId));
+        SpringContextHolder.getBean(ShoppingCartListService.class).getShoppingCartFromTable(cart,userId);
         cart.setUserId(userId);
         return saveCart(uniqueKey,cart);
     }
@@ -54,6 +55,7 @@ public class NormalShoppingFlowService{
     }
     public ShoppingCart saveCart(String uniqueKey,ShoppingCart cart) {
         cart.setLastModifyTime(new Date());
+        ShoppingCartProcessing.cartProcessing(cart);
         WebContextFactory.getWebContext().setSessionAttr(uniqueKey, cart);
         return cart;
     }

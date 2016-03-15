@@ -3,7 +3,7 @@ drop table if exists PRD_PRODUCT;
 /*==============================================================*/
 /* Table: PRD_PRODUCT3                                          */
 /*==============================================================*/
-create table PRD_PRODUCT
+create table PRODUCT
 (
    ID          bigint not null auto_increment,
    PRODUCT_NM           varchar(255) not null,

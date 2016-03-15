@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/cart")
 public class ShoppingFlowController  {
     @RequestMapping(value = "/add")
-    public void addItem(ModelMap model,  Integer quantity) {
+    public void addItem(ModelMap model,Integer quantity,Integer productId) {
         SysUser sysUser = WebContextFactory.getWebContext().getFrontEndUser();
         if (sysUser == null){
             model.put("error", "login");
             return;
         }
-        SpringContextHolder.getBean(NormalShoppingFlowService.class).addItem(quantity,sysUser.getId().intValue());
+        SpringContextHolder.getBean(NormalShoppingFlowService.class).addItem(productId,quantity,sysUser.getId().intValue());
 
     }
 }
